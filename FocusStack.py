@@ -64,7 +64,7 @@ def align_images(images):
     outimages = []
 
     if use_sift:
-        detector = cv2.xfeatures2d.SIFT_create()
+        detector =  cv2.SIFT_create()
     else:
         detector = cv2.ORB_create(1000)
 
